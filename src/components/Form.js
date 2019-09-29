@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Form = ({ getRecipe }) => (
   <form onSubmit={getRecipe}>
@@ -6,5 +7,9 @@ const Form = ({ getRecipe }) => (
     <button type="submit">Search</button>
   </form>
 );
+
+Form.propTypes = {
+  getRecipe: PropTypes.func.isRequired,
+};
 
 export default Form;
