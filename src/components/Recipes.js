@@ -10,7 +10,11 @@ const Recipes = ({ recipes }) => (
             <div className="recipe__box">
               <img className="recipe__box-img" src={recipe.image_url} alt={recipe.title} />
               <div className="recipe__text">
-                <h5 className="recipe__title">{recipe.title}</h5>
+                <h5 className="recipe__title">
+                  {recipe.title.length < 30
+                    ? `${recipe.title}`
+                    : `${recipe.title.substring(0, 25)}...`}
+                </h5>
                 <p className="recipe__subtitle">
                   Publisher:
                   <span className="recipe__publisher">{recipe.publisher}</span>
