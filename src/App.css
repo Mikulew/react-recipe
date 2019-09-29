@@ -1,5 +1,5 @@
 body {
-  background:#f3f3f3;
+  background: #f3f3f3;
 }
 
 img {
@@ -31,7 +31,7 @@ button:focus {
   font-size: 1.5em;
 }
 
-.recipe_buttons {
+.recipe__button {
   border: solid 2px #e74c3c;
   background: transparent;
   padding: 0.4rem 0.6rem;
@@ -43,38 +43,48 @@ button:focus {
   margin-left: 0.7rem;
 }
 
-.recipes__box {
+.recipe__box {
   background: #fff;
   padding-bottom: 2rem;
   border-radius: 5px;
-  box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
+  box-shadow: -1px 2px 34px -13px rgba(0, 0, 0, 0.75);
   text-align: left;
+  min-height: 450px;
   overflow: hidden;
+  margin: 2rem 0 0 0;
 }
 
 .recipe__text {
   margin-left: 15px;
 }
 
-.recipes__title {
+.recipe__title {
   color: #e74c3c;
   text-transform: uppercase;
   font-size: 1.1rem;
   padding: 1.8rem 0 0.2rem 0;
 }
 
-.recipes__subtitle {
+.recipe__subtitle {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.8rem;
   letter-spacing: 2px;
 }
 
-.recipes__subtitle span {
+.recipe__subtitle span {
   text-transform: none;
   font-weight: 400;
   font-size: 0.8rem;
   letter-spacing: 1px;
+}
+
+.recipe__publisher {
+  margin: 0 0 0 5px;
+}
+
+.form {
+  margin: 2rem 0 0 0;
 }
 
 .form__input {
@@ -99,7 +109,7 @@ button:focus {
   margin-left: 0.7rem;
 }
 
-input[type="text"] { 
+input[type='text'] {
   outline: none;
 }
 
@@ -125,7 +135,8 @@ input:-webkit-autofill {
   margin: 1rem 0;
 }
 
-.active-recipe__publisher, .active-recipe__website {
+.active-recipe__publisher,
+.active-recipe__website {
   text-transform: uppercase;
   font-size: 1.2rem;
   margin-bottom: 1rem;
