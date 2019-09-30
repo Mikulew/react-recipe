@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Recipes = ({ recipes }) => (
   <div className="container">
@@ -21,7 +22,14 @@ const Recipes = ({ recipes }) => (
                 </p>
               </div>
               <button className="recipe__button" type="button">
-                View Recipe
+                <Link
+                  to={{
+                    pathname: `/recipe/${recipe.recipe_id}`,
+                    state: { recipe: recipe.title },
+                  }}
+                >
+                  View Recipe
+                </Link>
               </button>
             </div>
           </div>
@@ -36,7 +44,7 @@ Recipes.propTypes = {
 };
 
 Recipes.defaultProps = {
-  recipes: {},
+  recipes: [],
 };
 
 export default Recipes;
