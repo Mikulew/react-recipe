@@ -5,6 +5,7 @@
 - [General info](#general-info)
 - [Technologies](#technologies)
 - [Setup](#setup)
+- [Inspiration](#inspiration)
 
 ## General info
 
@@ -49,3 +50,11 @@ npm run build
 # remove the "build" directory
 npm run clean
 ```
+
+## Inspiration
+
+This is a training repository. I got a recruitment task and decided to do training before solving the issues. This tutorial helped me solve these.
+
+Source: https://www.youtube.com/watch?v=PbJt7-a2274 Author: Hamza Mirza
+
+Thanks to this I wrote the recruitment task https://github.com/Mikulew/react-pokemon
